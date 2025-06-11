@@ -4,6 +4,10 @@ import numpy as np
 
 #model = joblib.load("modelJb_klasifikasiIris.joblib")
 
+# DEBUG FILES IN CURRENT DIR
+    st.write("DEBUG: Files in current directory:")
+    st.write(os.listdir())  # Ini akan menunjukkan semua file yang terlihat oleh Streamlit
+
 def show_single():
     st.title("Single Prediction")
     a=float(st.number_input("Sepal length in cm"))
